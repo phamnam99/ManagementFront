@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>Quản lý đơn hàng</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<link rel="stylesheet" href="style.css">
+	
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+	</head>
+	<body>
+	<section class="ftco-section">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-6 text-center mb-4">
+					<h2 class="heading-section">Quản lý đơn hàng</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 row">
+					<div class="col-md-6 row">
+						<label for="" class="col-md-4">Loại sản phẩm</label>
+
+						<select class="form-select col-md-6" aria-label="Default select example">
+							<option value="1" selected>Tất cả</option>
+							<option value="2">Quần áo</option>
+							<option value="3">Phụ kiện</option>
+						</select>
+					</div>
+				</div>
+				<div class="col-md-12">
+					<div class="col-md-2">
+						<button class="search">Tìm kiếm</button>
+					</div>
+				</div>
+			</div>
+            
+            <div class="row">
+				<div class="col-md-12">
+					<h3 class="h5 mb-4 text-center">Danh sách hàng hóa</h3>
+					<div class="table-wrap">
+						<table class="table">
+						  <thead class="thead-primary">
+						    <tr>
+						    	<th>&nbsp;</th>
+						    	<th>&nbsp;</th>
+						    	<th>Sản phẩm</th>
+                                <th>Giá</th>
+                                <th>Khách đặt</th>
+                                <th>&nbsp;</th>
+						    </tr>
+						  </thead>
+						  <tbody>
+						    <tr class="alert" role="alert">
+								<!--Checkbox-->
+						    	<td>
+						    		<label class="checkbox-wrap checkbox-primary">
+										  <input type="checkbox" checked>
+										  <span class="checkmark"></span>
+										</label>
+						    	</td>
+
+								<!--Ảnh sản phẩm-->
+						    	<td>
+						    		<div class="img" style="background-image: url(images/product-1.png);"></div>
+						    	</td>
+
+								<!--Mô tả-->
+								<td>
+									<div class="email">
+										<span>Sneakers Shoes 2020 For Men</span>
+										<span></span>
+									</div>
+								</td>
+
+								<!--Giá-->
+						      	<td>$44.99</td>
+
+								<!--Khách đặt-->
+								<td>Ngọc Nam</td>
+								
+								<!--Button xóa-->
+								<td>
+									<button style="border: none">Duyệt đơn</button>
+									<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+										<span aria-hidden="true"><i class="fa fa-close"></i></span>
+									</button>
+								</td>
+						    </tr>
+
+						    <tr class="alert" role="alert">
+						    	<td>
+						    		<label class="checkbox-wrap checkbox-primary">
+										<input type="checkbox">
+										<span class="checkmark"></span>
+									</label>
+						    	</td>
+
+						    	<td>
+						    		<div class="img" style="background-image: url(images/product-2.png);"></div>
+						    	</td>
+
+								<td>
+									<div class="email">
+										<span>Sneakers Shoes 2020 For Men </span>
+										<span></span>
+									</div>
+								</td>
+
+						      	<td>$30.99</td>
+
+                                  <td>Ngọc Nam</td>
+
+								<td>
+									<button style="border: none">Duyệt đơn</button>
+									<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+									<span aria-hidden="true"><i class="fa fa-close"></i></span>
+									</button>
+								</td>
+						    </tr>
+
+						    <tr class="alert" role="alert">
+						    	<td>
+						    		<label class="checkbox-wrap checkbox-primary">
+										  <input type="checkbox">
+										  <span class="checkmark"></span>
+										</label>
+						    	</td>
+
+						    	<td>
+						    		<div class="img" style="background-image: url(images/product-3.png);"></div>
+						    	</td>
+
+								<td>
+									<div class="email">
+										<span>Sneakers Shoes 2020 For Men </span>
+										<span></span>
+									</div>
+								</td>
+
+						      	<td>$35.50</td>
+
+                                  <td>Ngọc Nam</td>
+
+								<td>
+									<button style="border: none">Duyệt đơn</button>
+									<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+									<span aria-hidden="true"><i class="fa fa-close"></i></span>
+								</button>
+				        		</td>
+						    </tr>
+
+						    <tr class="alert" role="alert">
+						    	<td>
+						    		<label class="checkbox-wrap checkbox-primary">
+										  <input type="checkbox">
+										  <span class="checkmark"></span>
+										</label>
+						    	</td>
+
+						    	<td>
+						    		<div class="img" style="background-image: url(images/product-4.png);"></div>
+						    	</td>
+
+								<td>
+									<div class="email">
+										<span>Sneakers Shoes 2020 For Men </span>
+										<span></span>
+									</div>
+								</td>
+
+						      	<td>$76.99</td>
+
+                                  <td>Ngọc Nam</td>
+
+								<td>
+									<button style="border: none">Duyệt đơn</button>
+									<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+										<span aria-hidden="true"><i class="fa fa-close"></i></span>
+									</button>
+								</td>
+						    </tr>
+
+						    <tr class="alert" role="alert">
+						    	<td class="border-bottom-0">
+						    		<label class="checkbox-wrap checkbox-primary">
+										  <input type="checkbox">
+										  <span class="checkmark"></span>
+										</label>
+						    	</td>
+
+						    	<td class="border-bottom-0">
+						    		<div class="img" style="background-image: url(images/product-1.png);"></div>
+						    	</td>
+
+								<td class="border-bottom-0">
+									<div class="email">
+										<span>Sneakers Shoes 2020 For Men </span>
+										<span></span>
+									</div>
+								</td>
+
+						      	<td class="border-bottom-0">$40.00</td>
+
+                                  <td>Ngọc Nam</td>
+
+								<td class="border-bottom-0">
+									<button style="border: none">Duyệt đơn</button>
+									<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+										<span aria-hidden="true"><i class="fa fa-close"></i></span>
+									</button>
+								</td>
+						    </tr>
+						  </tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</section>
+
+
+	<script>
+		$(document).ready(function() {
+			$('.js-example-basic-single').select2();
+		});
+	</script>
+	</body>
+</html>
+
